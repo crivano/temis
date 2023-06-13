@@ -1,0 +1,231 @@
+package br.jus.trf2.temis.cae.model.enm;
+
+import com.crivano.jbiz.IEnum;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public enum CaeTipoDeAtividadeEnum implements IEnum {
+	CONFERENCIA(1, "Conferência", false),
+	//
+	PROGRAMA_DE_ESTUDO_AVANCADO(2, "Programa de Estudo Avançado", false),
+	//
+	GRUPO_DE_TRABALHO(3, "Grupo de Trabalho", false),
+	//
+	CURSO_ESPECIAL(4, "Curso Especial", false),
+	//
+	CURSO_DE_AMBIENTACAO(5, "Curso de Ambientação", false),
+	//
+	GRUPO_DE_ESTUDO(6, "Grupo de Estudo", false),
+	//
+	FORUM(7, "Fórum", false),
+	//
+	CURSO(3023, "Curso", true),
+	//
+	CURSO_A_DISTANCIA_EAD(3024, "Curso a Distância - EAD", true),
+	//
+	CIVIL(10000, "CIVIL", true),
+	//
+	CIVIL_PROGRAMA_DE_ESTUDO_AVANCADO(10002, "CIVIL (Programa de Estudo Avançado)", true),
+	//
+	CIVIL_GRUPO_DE_TRABALHO(10003, "CIVIL (Grupo de Trabalho)", true),
+	//
+	CIVIL_CURSO_ESPECIAL(10004, "CIVIL (Curso Especial)", true),
+	//
+	CIVIL_CURSO_DE_AMBIENTACAO(10005, "CIVIL (Curso de Ambientação)", true),
+	//
+	CIVIL_GRUPO_DE_ESTUDO(10006, "CIVIL (Grupo de Estudo)", true),
+	//
+	CIVIL_FORUM(10007, "CIVIL (Fórum)", true),
+	//
+	DIREITOS_HUMANOS_I(11000, "DIREITOS HUMANOS I", true),
+	//
+	DIREITOS_HUMANOS_I_PROGRAMA_DE_ESTUDO_AVANCADO(11002, "DIREITOS HUMANOS I (Programa de Estudo Avançado)", true),
+	//
+	DIREITOS_HUMANOS_I_GRUPO_DE_TRABALHO(11003, "DIREITOS HUMANOS I (Grupo de Trabalho)", true),
+	//
+	DIREITOS_HUMANOS_I_CURSO_ESPECIAL(11004, "DIREITOS HUMANOS I (Curso Especial)", true),
+	//
+	DIREITOS_HUMANOS_I_CURSO_DE_AMBIENTACAO(11005, "DIREITOS HUMANOS I (Curso de Ambientação)", true),
+	//
+	DIREITOS_HUMANOS_I_GRUPO_DE_ESTUDO(11006, "DIREITOS HUMANOS I (Grupo de Estudo)", true),
+	//
+	DIREITOS_HUMANOS_I_FORUM(11007, "DIREITOS HUMANOS I (Fórum)", true),
+	//
+	DIREITOS_HUMANOS_II(12000, "DIREITOS HUMANOS II", true),
+	//
+	DIREITOS_HUMANOS_II_PROGRAMA_DE_ESTUDO_AVANCADO(12002, "DIREITOS HUMANOS II (Programa de Estudo Avançado)", true),
+	//
+	DIREITOS_HUMANOS_II_GRUPO_DE_TRABALHO(12003, "DIREITOS HUMANOS II (Grupo de Trabalho)", true),
+	//
+	DIREITOS_HUMANOS_II_CURSO_ESPECIAL(12004, "DIREITOS HUMANOS II (Curso Especial)", true),
+	//
+	DIREITOS_HUMANOS_II_CURSO_DE_AMBIENTACAO(12005, "DIREITOS HUMANOS II (Curso de Ambientação)", true),
+	//
+	DIREITOS_HUMANOS_II_GRUPO_DE_ESTUDO(12006, "DIREITOS HUMANOS II (Grupo de Estudo)", true),
+	//
+	DIREITOS_HUMANOS_II_FORUM(12007, "DIREITOS HUMANOS II (Fórum)", true),
+	//
+	ECONOMICO(13000, "ECONÔMICO", true),
+	//
+	ECONOMICO_PROGRAMA_DE_ESTUDO_AVANCADO(13002, "ECONÔMICO (Programa de Estudo Avançado)", true),
+	//
+	ECONOMICO_GRUPO_DE_TRABALHO(13003, "ECONÔMICO (Grupo de Trabalho)", true),
+	//
+	ECONOMICO_CURSO_ESPECIAL(13004, "ECONÔMICO (Curso Especial)", true),
+	//
+	ECONOMICO_CURSO_DE_AMBIENTACAO(13005, "ECONÔMICO (Curso de Ambientação)", true),
+	//
+	ECONOMICO_GRUPO_DE_ESTUDO(13006, "ECONÔMICO (Grupo de Estudo)", true),
+	//
+	ECONOMICO_FORUM(13007, "ECONÔMICO (Fórum)", true),
+	//
+	FILOSOFIA(14000, "FILOSOFIA", true),
+	//
+	FILOSOFIA_PROGRAMA_DE_ESTUDO_AVANCADO(14002, "FILOSOFIA (Programa de Estudo Avançado)", true),
+	//
+	FILOSOFIA_GRUPO_DE_TRABALHO(14003, "FILOSOFIA (Grupo de Trabalho)", true),
+	//
+	FILOSOFIA_CURSO_ESPECIAL(14004, "FILOSOFIA (Curso Especial)", true),
+	//
+	FILOSOFIA_CURSO_DE_AMBIENTACAO(14005, "FILOSOFIA (Curso de Ambientação)", true),
+	//
+	FILOSOFIA_GRUPO_DE_ESTUDO(14006, "FILOSOFIA (Grupo de Estudo)", true),
+	//
+	FILOSOFIA_FORUM(14007, "FILOSOFIA (Fórum)", true),
+	//
+	INTERNACIONAL(15000, "INTERNACIONAL", true),
+	//
+	INTERNACIONAL_PROGRAMA_DE_ESTUDO_AVANCADO(15002, "INTERNACIONAL (Programa de Estudo Avançado)", true),
+	//
+	INTERNACIONAL_GRUPO_DE_TRABALHO(15003, "INTERNACIONAL (Grupo de Trabalho)", true),
+	//
+	INTERNACIONAL_CURSO_ESPECIAL(15004, "INTERNACIONAL (Curso Especial)", true),
+	//
+	INTERNACIONAL_CURSO_DE_AMBIENTACAO(15005, "INTERNACIONAL (Curso de Ambientação)", true),
+	//
+	INTERNACIONAL_GRUPO_DE_ESTUDO(15006, "INTERNACIONAL (Grupo de Estudo)", true),
+	//
+	INTERNACIONAL_FORUM(15007, "INTERNACIONAL (Fórum)", true),
+	//
+	JUSTICA_CONSTITUCIONAL(16000, "JUSTIÇA CONSTITUCIONAL", true),
+	//
+	JUSTICA_CONSTITUCIONAL_PROGRAMA_DE_ESTUDO_AVANCADO(16002, "JUSTIÇA CONSTITUCIONAL (Programa de Estudo Avançado)",
+			true),
+	//
+	JUSTICA_CONSTITUCIONAL_GRUPO_DE_TRABALHO(16003, "JUSTIÇA CONSTITUCIONAL (Grupo de Trabalho)", true),
+	//
+	JUSTICA_CONSTITUCIONAL_CURSO_ESPECIAL(16004, "JUSTIÇA CONSTITUCIONAL (Curso Especial)", true),
+	//
+	JUSTICA_CONSTITUCIONAL_CURSO_DE_AMBIENTACAO(16005, "JUSTIÇA CONSTITUCIONAL (Curso de Ambientação)", true),
+	//
+	JUSTICA_CONSTITUCIONAL_GRUPO_DE_ESTUDO(16006, "JUSTIÇA CONSTITUCIONAL (Grupo de Estudo)", true),
+	//
+	JUSTICA_CONSTITUCIONAL_FORUM(16007, "JUSTIÇA CONSTITUCIONAL (Fórum)", true),
+	//
+	MEIO_AMBIENTE(17000, "MEIO AMBIENTE", true),
+	//
+	MEIO_AMBIENTE_PROGRAMA_DE_ESTUDO_AVANCADO(17002, "MEIO AMBIENTE (Programa de Estudo Avançado)", true),
+	//
+	MEIO_AMBIENTE_GRUPO_DE_TRABALHO(17003, "MEIO AMBIENTE (Grupo de Trabalho)", true),
+	//
+	MEIO_AMBIENTE_CURSO_ESPECIAL(17004, "MEIO AMBIENTE (Curso Especial)", true),
+	//
+	MEIO_AMBIENTE_CURSO_DE_AMBIENTACAO(17005, "MEIO AMBIENTE (Curso de Ambientação)", true),
+	//
+	MEIO_AMBIENTE_GRUPO_DE_ESTUDO(17006, "MEIO AMBIENTE (Grupo de Estudo)", true),
+	//
+	MEIO_AMBIENTE_FORUM(17007, "MEIO AMBIENTE (Fórum)", true),
+	//
+	PREVIDENCIARIO(18000, "PREVIDENCIÁRIO", true),
+	//
+	PREVIDENCIARIO_PROGRAMA_DE_ESTUDO_AVANCADO(18002, "PREVIDENCIÁRIO (Programa de Estudo Avançado)", true),
+	//
+	PREVIDENCIARIO_GRUPO_DE_TRABALHO(18003, "PREVIDENCIÁRIO (Grupo de Trabalho)", true),
+	//
+	PREVIDENCIARIO_CURSO_ESPECIAL(18004, "PREVIDENCIÁRIO (Curso Especial)", true),
+	//
+	PREVIDENCIARIO_CURSO_DE_AMBIENTACAO(18005, "PREVIDENCIÁRIO (Curso de Ambientação)", true),
+	//
+	PREVIDENCIARIO_GRUPO_DE_ESTUDO(18006, "PREVIDENCIÁRIO (Grupo de Estudo)", true),
+	//
+	PREVIDENCIARIO_FORUM(18007, "PREVIDENCIÁRIO (Fórum)", true),
+	//
+	PROCESSUAL_COLETIVO(19000, "PROCESSUAL COLETIVO", true),
+	//
+	PROCESSUAL_COLETIVO_PROGRAMA_DE_ESTUDO_AVANCADO(19002, "PROCESSUAL COLETIVO (Programa de Estudo Avançado)", true),
+	//
+	PROCESSUAL_COLETIVO_GRUPO_DE_TRABALHO(19003, "PROCESSUAL COLETIVO (Grupo de Trabalho)", true),
+	//
+	PROCESSUAL_COLETIVO_CURSO_ESPECIAL(19004, "PROCESSUAL COLETIVO (Curso Especial)", true),
+	//
+	PROCESSUAL_COLETIVO_CURSO_DE_AMBIENTACAO(19005, "PROCESSUAL COLETIVO (Curso de Ambientação)", true),
+	//
+	PROCESSUAL_COLETIVO_GRUPO_DE_ESTUDO(19006, "PROCESSUAL COLETIVO (Grupo de Estudo)", true),
+	//
+	PROCESSUAL_COLETIVO_FORUM(19007, "PROCESSUAL COLETIVO (Fórum)", true),
+	//
+	PROPRIEDADE_INDUSTRIAL(20000, "PROPRIEDADE INDUSTRIAL", true),
+	//
+	PROPRIEDADE_INDUSTRIAL_PROGRAMA_DE_ESTUDO_AVANCADO(20002, "PROPRIEDADE INDUSTRIAL (Programa de Estudo Avançado)",
+			true),
+	//
+	PROPRIEDADE_INDUSTRIAL_GRUPO_DE_TRABALHO(20003, "PROPRIEDADE INDUSTRIAL (Grupo de Trabalho)", true),
+	//
+	PROPRIEDADE_INDUSTRIAL_CURSO_ESPECIAL(20004, "PROPRIEDADE INDUSTRIAL (Curso Especial)", true),
+	//
+	PROPRIEDADE_INDUSTRIAL_CURSO_DE_AMBIENTACAO(20005, "PROPRIEDADE INDUSTRIAL (Curso de Ambientação)", true),
+	//
+	PROPRIEDADE_INDUSTRIAL_GRUPO_DE_ESTUDO(20006, "PROPRIEDADE INDUSTRIAL (Grupo de Estudo)", true),
+	//
+	PROPRIEDADE_INDUSTRIAL_FORUM(20007, "PROPRIEDADE INDUSTRIAL (Fórum)", true),
+	//
+	TRIBUTARIO(21000, "TRIBUTÁRIO", true),
+	//
+	TRIBUTARIO_PROGRAMA_DE_ESTUDO_AVANCADO(21002, "TRIBUTÁRIO (Programa de Estudo Avançado)", true),
+	//
+	TRIBUTARIO_GRUPO_DE_TRABALHO(21003, "TRIBUTÁRIO (Grupo de Trabalho)", true),
+	//
+	TRIBUTARIO_CURSO_ESPECIAL(21004, "TRIBUTÁRIO (Curso Especial)", true),
+	//
+	TRIBUTARIO_CURSO_DE_AMBIENTACAO(21005, "TRIBUTÁRIO (Curso de Ambientação)", true),
+	//
+	TRIBUTARIO_GRUPO_DE_ESTUDO(21006, "TRIBUTÁRIO (Grupo de Estudo)", true),
+	//
+	TRIBUTARIO_FORUM(21007, "TRIBUTÁRIO (Fórum)", true),
+	//
+	GESTAO_JUDICIARIA(22000, "GESTÃO JUDICIÁRIA", true),
+	//
+	GESTAO_JUDICIARIA_PROGRAMA_DE_ESTUDO_AVANCADO(22002, "GESTÃO JUDICIÁRIA (Programa de Estudo Avançado)", true),
+	//
+	GESTAO_JUDICIARIA_GRUPO_DE_TRABALHO(22003, "GESTÃO JUDICIÁRIA (Grupo de Trabalho)", true),
+	//
+	GESTAO_JUDICIARIA_CURSO_ESPECIAL(22004, "GESTÃO JUDICIÁRIA (Curso Especial)", true),
+	//
+	GESTAO_JUDICIARIA_CURSO_DE_AMBIENTACAO(22005, "GESTÃO JUDICIÁRIA (Curso de Ambientação)", true),
+	//
+	GESTAO_JUDICIARIA_GRUPO_DE_ESTUDO(22006, "GESTÃO JUDICIÁRIA (Grupo de Estudo)", true),
+	//
+	GESTAO_JUDICIARIA_FORUM(22007, "GESTÃO JUDICIÁRIA (Fórum)", true);
+
+	private final int id;
+	private final String nome;
+	private final boolean ativo;
+
+	@Override
+	public Long getId() {
+		return (long) id;
+	}
+
+	@Override
+	public String getCode() {
+		return this.name();
+	}
+
+	@Override
+	public String getDescr() {
+		return this.nome;
+	}
+}

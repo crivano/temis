@@ -1,0 +1,29 @@
+{
+    "folders": [
+		{
+			"path": "../sgbd"
+		},
+		{
+			"path": "../jbiz-vuejs2"
+		},
+		{
+			"path": "../jsync"
+		},
+		{
+			"path": "../juia-vuejs2"
+		},
+		{
+			"path": "temis-module"
+		},
+		{
+			"path": "temis-cae"
+		},
+		{
+			"path": "temis-pjd"
+		},
+		{
+			"path": "temis"
+		}
+	],
+    "settings": {}
+}

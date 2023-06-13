@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>temis</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://localhost/customtag</taglib-uri>
+			<taglib-location>/WEB-INF/tags/tags.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://localhost/functiontag</taglib-uri>
+			<taglib-location>/WEB-INF/tags/func.tld</taglib-location>
+		</taglib>
+		<jsp-property-group>
+			<description>Property group for common configuration for all the JSP's</description>
+			<url-pattern>*.jsp</url-pattern>
+			<url-pattern>*.html</url-pattern>
+			<el-ignored>false</el-ignored>
+			<page-encoding>UTF-8</page-encoding>
+		</jsp-property-group>
+	</jsp-config>
+
+	<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.locale</param-name>
+		<param-value>pt_BR</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>br.com.caelum.vraptor.packages</param-name>
+		<param-value>
+			br.com.caelum.vraptor.deserialization.gson,
+			br.com.caelum.vraptor.serialization.gson,
+			br.com.caelum.vraptor.serialization.gson.adapters,
+			com.crivano.vraptorgae.framework,
+			com.crivano.vraptorgae.util,
+			br.jus.trf2.temis.core.controller,
+			br.jus.trf2.temis.core.module,
+			br.jus.trf2.temis.core.util,
+			br.jus.trf2.temis.api.v1,
+			br.gov.jfrj.siga.jpa,
+			br.jus.trf2.temis.cae.controller,
+			br.jus.trf2.temis.cae.module
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>br.com.caelum.vraptor.encoding</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>CORS</filter-name>
+		<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+
+		<init-param>
+			<param-name>cors.supportedMethods</param-name>
+			<param-value>GET, POST, HEAD, PUT, DELETE, OPTIONS</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CORS</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>TemisServlet</servlet-name>
+		<servlet-class>br.jus.trf2.temis.api.v1.TemisApiV1Servlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TemisServlet</servlet-name>
+		<url-pattern>/api/v1/*</url-pattern>
+	</servlet-mapping>
+	<!-- -->
+</web-app>
